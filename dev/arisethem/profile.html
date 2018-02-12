@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Arise Admin Panel" />
+		<meta name="keywords" content="Admin, Dashboard, Bootstrap3, Sass, transform, CSS3, HTML5, Web design, UI Design, Responsive Dashboard, Responsive Admin, Admin Theme, Best Admin UI, Bootstrap Theme, Themeforest, Bootstrap, C3 Graphs, D3 Graphs, NVD3 Graphs, Admin Skin, Black Admin Dashboard, Grey Admin Dashboard, Dark Admin Dashboard, Simple Admin Dashboard, Simple Admin Theme, Simple Bootstrap Dashboard, User Profile" />
+		<meta name="author" content="Ramji" />
+		<link rel="shortcut icon" href="img/fav.png">
+		<title>Arise Admin Panel, Arise Dashboard - Profile</title>
+		
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+
+		<!-- Main CSS -->
+		<link href="css/main.css" rel="stylesheet" media="screen" />
+
+		<!-- Ion Icons -->
+		<link href="fonts/icomoon/icomoon.css" rel="stylesheet" />
+
+		<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>		
+
+		<!-- Header starts -->
+		<header>
+
+			<!-- Logo starts -->
+			<a href="index.html" class="logo">
+				<img src="img/logo.png" alt="Arise Admin Dashboard Logo" />
+			</a>
+			<!-- Logo ends -->
+
+			<!-- Header actions starts -->
+			<ul id="header-actions" class="clearfix">
+				<li class="list-box hidden-xs dropdown">
+					<a id="drop2" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-warning2"></i>
+					</a>
+					<span class="info-label blue-bg">5</span>
+					<ul class="dropdown-menu imp-notify">
+						<li class="dropdown-header">You have 3 notifications</li>
+						<li>
+							<div class="icon">
+								<img src="img/thumbs/user10.png" alt="Arise Admin">
+							</div>
+							<div class="details">
+								<strong class="text-red">Rogie King</strong>
+								<span>The best dark admin template.</span>
+							</div>
+						</li>
+						<li>
+							<div class="icon">
+								<img src="img/thumbs/user6.png" alt="Arise Admin">
+							</div>
+							<div class="details">
+								<strong class="text-green">Dan Cederholm</strong>
+								<span>IE is a free web browser from Microsoft.</span>
+							</div>
+						</li>
+						<li>
+							<div class="icon">
+								<img src="img/thumbs/user1.png" alt="Arise Admin">
+							</div>
+							<div class="details">
+								<strong class="text-blue">Justin Mezzell</strong>
+								<span>Safari is known for its sleek design and ease of use.</span>
+							</div>
+						</li>
+						<li class="dropdown-footer">See all the notifications</li>
+					</ul>
+				</li>
+				<li class="list-box hidden-xs dropdown">
+					<a id="drop3" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-archive2"></i>
+					</a>
+					<span class="info-label red-bg">3</span>
+					<ul class="dropdown-menu progress-info">
+						<li class="dropdown-header">You have 7 pending tasks</li>
+						<li>
+							<div class="progress-info">
+								<strong class="text-red">Critical</strong>
+								<span>New Dashboard Design</span>
+								<span class="pull-right text-red">20%</span>
+							</div>
+							<div class="progress progress-md no-margin">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+									<span class="sr-only">20% Complete (success)</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="progress-info">
+								<strong class="text-blue">Primary</strong>
+								<span>UI Changes in V2</span>
+								<span class="pull-right">90%</span>
+							</div>
+							<div class="progress progress-sm no-margin">
+								<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+									<span class="sr-only">90% Complete</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="progress-info">
+								<strong class="text-yellow">Urgent</strong>
+								<span>Bug Fix #123</span>
+								<span class="pull-right">60%</span>
+							</div>
+							<div class="progress progress-xs no-margin">
+								<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+									<span class="sr-only">60% Complete (warning)</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="progress-info">
+								<span>Bug Fix #111</span>
+								<span class="pull-right text-green">Complete</span>
+							</div>
+							<div class="progress progress-xs no-margin">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+									<span class="sr-only">100% Complete (warning)</span>
+								</div>
+							</div>
+						</li>
+						<li class="dropdown-footer">See all the tasks</li>
+					</ul>
+				</li>
+				<li class="list-box user-admin hidden-xs dropdown">
+					<div class="admin-details">
+						<div class="name">Sean</div>
+						<div class="designation">System Admin</div>
+					</div>
+					<a id="drop4" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-user"></i>
+					</a>
+					<ul class="dropdown-menu sm">
+						<li class="dropdown-content">
+							<a href="profile.html">Edit Profile</a>
+							<a href="forgot-pwd.html">Change Password</a>
+							<a href="styled-inputs.html">Settings</a>
+							<a href="login.html">Logout</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<button type="button" id="toggleMenu" class="toggle-menu">
+						<i class="collapse-menu-icon"></i>
+					</button>
+				</li>
+			</ul>
+			<!-- Header actions ends -->
+
+			<div class="custom-search hidden-sm hidden-xs">
+				<input type="text" class="search-query" placeholder="Search here ...">
+				<i class="icon-search3"></i>
+			</div>
+		</header>
+		<!-- Header ends -->
+
+		<!-- Left sidebar start -->
+		<div class="vertical-nav vertical-nav-sm">
+
+			<!-- Collapse menu starts -->
+			<button class="collapse-menu">
+				<i class="icon-menu2"></i>
+			</button>
+			<!-- Collapse menu ends -->
+
+			<!-- Current user starts -->
+			<div class="user-details clearfix">
+				<a href="profile.html" class="user-img">
+					<img src="img/thumbs/user1.png" alt="User Info">
+					<span class="likes-info">9</span>
+				</a>
+				<h5 class="user-name">Sean</h5>
+			</div>
+			<!-- Current user ends -->
+
+			<!-- Sidebar menu starts -->
+			<ul class="menu clearfix">
+				<li>
+					<a href="index.html">
+						<i class="icon-air-play"></i>
+						<span class="menu-item">Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-lab3"></i>
+						<span class="menu-item">Projects</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='tasks.html'>Tasks</a>
+						</li>
+						<li>
+							<a href='cards.html'>Cards</a>
+						</li>
+						<li>
+							<a href='users.html'>Users</a>
+						</li>
+						<li>
+							<a href='project-list.html'>Project List</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href='calendar.html'>
+						<i class="icon-calendar7"></i>
+						<span class="menu-item">Calendar</span>
+					</a>
+				</li>
+				<li>
+					<a href='widgets.html'>
+						<i class="icon-colours"></i>
+						<span class="menu-item">Widgets</span>
+					</a>
+				</li>
+				<li class="active selected">
+					<a href="#">
+						<i class="icon-head"></i>
+						<span class="menu-item">Pages</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='profile.html' class="current">User Profile</a>
+						</li>
+						<li>
+							<a href='blog.html'>Blog</a>
+						</li>
+						<li>
+							<a href='invoice.html'>Invoice</a>
+						</li>
+						<li>
+							<a href='timeline.html'>Timeline</a>
+						</li>
+						<li>
+							<a href="pricing.html">Pricing</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-line-graph"></i>
+						<span class="menu-item">Graphs</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='c3-graphs.html'>C3 Graphs</a>
+						</li>
+						<li>
+							<a href='small-graphs.html'>Small Graphs</a>
+						</li>
+						<li>
+							<a href='maps.html'>Vector Maps</a>
+						</li>
+						<li>
+							<a href='flot.html'>Flot</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-layout5"></i>
+						<span class="menu-item">Forms</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='styled-inputs.html'>Styled Inputs</a>
+						</li>
+						<li>
+							<a href='check-radio.html'>Check &amp; Radios</a>
+						</li>
+						<li>
+							<a href='form-inputs.html'>Form Inputs</a>
+						</li>
+						<li>
+							<a href='editor.html'>WYSIWYG Editor</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href='gallery.html'>
+						<i class="icon-camera5"></i>
+						<span class="menu-item">Gallery</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-drop"></i>
+						<span class="menu-item">UI Elements</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='components.html'>Components</a>
+						</li>
+						<li>
+							<a href='progressbars.html'>Progress Bars</a>
+						</li>
+						<li>
+							<a href='notifications.html'>Notifications</a>
+						</li>
+						<li>
+							<a href='buttons.html'>Buttons</a>
+						</li>
+						<li>
+							<a href='typography.html'>Typography</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-layers4"></i>
+						<span class="menu-item">Layouts</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='custom-drag.html'>Drag &amp; Drop Panels</a>
+						</li>
+						<li>
+							<a href='custom-panels.html'>Custom Panels</a>
+						</li>
+						<li>
+							<a href='layout-sidebar.html'>Layout Sidebar</a>
+						</li>
+						<li>
+							<a href='default.html'>Basic Grid</a>
+						</li>
+						<li>
+							<a href='custom-grid.html'>Custom Grid</a>
+						</li>
+					</ul>
+				</li>				
+				<li>
+					<a href="#">
+						<i class="icon-warning2"></i>
+						<span class="menu-item">Error Pages</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='login.html'>Login</a>
+						</li>
+						<li>
+							<a href='signup.html'>SignUp</a>
+						</li>
+						<li>
+							<a href='forgot-pwd.html'>Forgot Password</a>
+						</li>
+						<li>
+							<a href="maintenance.html">Maintenance</a>
+						</li>
+						<li>
+							<a href='coming-soon.html'>Coming Soon</a>
+						</li>
+						<li>
+							<a href='error.html'>Page not Found</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-grid2"></i>
+						<span class="menu-item">Tables</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='tables.html'>Tables</a>
+						</li>
+						<li>
+							<a href="data-tables.html">Data Tables</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href='icons.html'>
+						<i class="icon-bolt"></i>
+						<span class="menu-item">Icons</span>
+					</a>
+				</li>
+			</ul>
+			<!-- Sidebar menu ends -->
+		</div>
+		<!-- Left sidebar end -->
+
+		<!-- Dashboard Wrapper Start -->
+		<div class="dashboard-wrapper">
+
+			<!-- Container fluid Starts -->
+			<div class="container-fluid">
+
+				<!-- Top Bar Starts -->
+				<div class="top-bar clearfix">
+					<div class="row gutter">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<div class="page-title">
+								<h3>User Profile</h3>
+								<p>Small description about this profile / Pages / <a href="index.html">Home</a></p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<ul class="right-stats" id="mini-nav-right">
+								<li>
+									<a href="javascript:void(0)" class="btn btn-danger"><span>76</span>Sales</a>
+								</li>
+								<li>
+									<a href="tasks.html" class="btn btn-success">
+										<span>18</span>Tasks</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)" class="btn btn-info"><i class="icon-download6"></i> Export</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- Top Bar Ends -->
+
+				<!-- Row starts -->
+				<div class="row gutter">
+					<div class="col-lg-5 col-md-5 col-sm-9 col-xs-12">
+						<div class="panel height2 random-bg-five">
+							<div class="panel-body">
+								<div class="user-profile clearfix">
+									<div class="user-img">
+										<img src="img/thumbs/user1.png" alt="User Info">
+										<span class="completed-info">78%</span>
+									</div>
+									<h5>Completed</h5>
+									<h3>Fraser Davidson</h3>
+									<h4>UX Designer</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						<div class="panel height2 random-bg-six">
+							<div class="panel-body no-padding">
+								<div class="current-location">
+									<h4 class="text-white no-margin"><i class="icon-location icon-2x"></i> Location</h4>
+									<div id="mapDenmark" class="chart-height1"></div>
+									<h5 class="location">Copenhagen, Denmark</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<!-- Row inside row starts -->
+						<div class="row gutter">
+							<div class="col-lg-6 col-md-6 col-sm-3 col-xs-6">
+								<div class="panel height1 random-bg-two">
+									<div class="panel-body text-center">
+										<div class="user-stats">
+											<div>
+												<i class="icon-user2 icon-4x text-white"></i>
+											</div>
+											<h5>1983</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-3 col-xs-6">
+								<div class="panel height1 random-bg-four">
+									<div class="panel-body text-center">
+										<div class="user-stats">
+											<h1>14<small>yrs</small></h1>
+											<h5>Experience</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-3 col-xs-6">
+								<div class="panel height1 random-bg-seven">
+									<div class="panel-body text-center">
+										<div class="user-stats">
+											<h1>489</h1>
+											<h5>Projects</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-3 col-xs-6">
+								<div class="panel height1 random-bg-three">
+									<div class="panel-body no-padding">
+										<div class="user-stats">
+											<div class="like-photo">
+												<img src="img/like-arise-dashboard.jpg" class="img-responsive" alt="Photos Liked" />
+												<a href="javascript:void(0)" class="like">
+													<i class="icon-heart"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Row inside row ends -->
+					</div>
+				</div>
+				<!-- Row ends -->
+				<!-- Row starts -->				
+				<div class="row gutter">
+					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+						<!-- Row inside row starts -->
+						<div class="row gutter">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="panel">
+									<div class="panel-body">
+										<h4><i class="icon-file-text2 icon-2x text-blue"></i> Summary</h4>
+										<p class="text-justify">Arise Admin Dashboard is a centralized space that highlights the most important tools used by admins. The special pages are built into it to make the Admin Dashboard the go-to place for admins and founders to easily tweak and monitor their community. The admin control panel is the area where administrators can log in and make changes affecting the functionality of the site, edit templates, add new staff and many other administrative functions. It is set up much like the staff control panel the main difference in what functionality is exposed to the logged in user.</p>
+										<br>
+										<p class="text-justify">Arise Admin dashboard includes admin page, custom pages and components, integration samples with 3rd party plugins, Profile, Invoice, Tables, Tasks, Cards, Users, Projects, Calendar, Widgets, C3 Graphs, D3 Graphs, Per Circle Graphs, Peity Graphs, jVector Maps and Wysiwyg Editor.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Row inside row ends -->
+						<!-- Row inside row starts -->
+						<div class="row gutter">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="panel">
+									<div class="panel-body">
+										<h4><i class="icon-attachment2 icon-2x text-blue"></i> Timeline</h4>
+										<ul class="imp-messages">
+											<li>
+												<img src="img/thumbs/user2.png" class="avatar img-48" alt="Bootstrap Gallery">
+												<div class="message-date">21<span class="month">May</span>
+												</div>
+												<div class="message-wrapper">
+													<h4>Arise Admin Dashboard</h4>
+													<blockquote>Arise Admin dashboard includes admin page, custom pages and components, integration samples with 3rd party plugins, Profile, Invoice, Tables, Tasks, Cards, Users, Projects, Calendar, Widgets, Drag &amp; Drop, C3 Graphs, D3 Graphs, Per Circle Graphs, Peity Graphs, jVector Maps, Styled Inputs, Wysiwyg Editor, Progress Bars, Notifications, Typography, Buttons, Blog, Timeline, Login, Signup, Coming Soon and Widgets.
+													</blockquote>
+													<ul class="images clearfix">
+														<li>
+															<a href="#" class="thumbnail" data-original-title="">
+																<img alt="20x20" class="img-36" src="img/thumbs/user8.png">
+															</a>
+														</li>
+														<li>
+															<a href="#" class="thumbnail" data-original-title="">
+																<img alt="20x20" class="img-36" src="img/thumbs/user9.png">
+															</a>
+														</li>
+														<li>
+															<a href="#" class="thumbnail" data-original-title="">
+																<img alt="20x20" class="img-36" src="img/thumbs/user10.png">
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li>
+												<img src="img/thumbs/user5.png" class="avatar img-48" alt="Bootstrap Gallery">
+												<div class="message-date">14<span class="month">May</span>
+												</div>
+												<div class="message-wrapper">
+													<h4>Arise Admin Dashboard is a fully responsive bootstrap theme</h4>
+													<blockquote>A dashboard, in website administration, is typically the index page of the control panel for a website's content management system. Arise Admin Dashboard is a fully responsive Bootstrap theme for any store, it uses Bootstrap and it's created by using the latest HTML5, CSS3, Sass and UI features.
+													</blockquote>
+													<p class="url">
+														<i class="icon-film"></i>
+														<a href="#" data-original-title="">An important message from John Doe</a>
+													</p>
+												</div>
+											</li>
+											<li>
+												<img src="img/thumbs/user6.png" class="avatar img-48" alt="Bootstrap Gallery">
+												<div class="message-date">09<span class="month">May</span></div>
+												<div class="message-wrapper">
+													<h4>Arise Admin Dashboard typography.</h4>
+													<blockquote>Type design is a closely related craft, which some consider distinct and others a part of typography.
+													</blockquote>
+													<p class="url">
+														<i class="icon-link3"></i>
+														<a href="#" data-original-title="">An important message from John Doe</a>
+													</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="panel">
+									<div class="row gutter">
+										<div class="col-md-3 col-sm-3 col-xs-12">
+											<a href="javascript:void(0)" class="socail-stats fb-bg">
+												<i class="icon-facebook icon-2x"></i>
+												<h4>2985</h4>
+											</a>
+										</div>
+										<div class="col-md-3 col-sm-3 col-xs-12">
+											<a href="javascript:void(0)" class="socail-stats tw-bg">
+												<i class="icon-twitter icon-2x"></i>
+												<h4>1768</h4>
+											</a>
+										</div>
+										<div class="col-md-3 col-sm-3 col-xs-12">
+											<a href="javascript:void(0)" class="socail-stats gplus-bg">
+												<i class="icon-googleplus icon-2x"></i>
+												<h4>846</h4>
+											</a>
+										</div>
+										<div class="col-md-3 col-sm-3 col-xs-12">
+											<a href="javascript:void(0)" class="socail-stats lk-bg no-margin">
+												<i class="icon-linkedin icon-2x"></i>
+												<h4>327</h4>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Row inside row ends -->
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<!-- Row inside row starts -->
+						<div class="row gutter">
+							<div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+								<div class="panel height2">
+									<div id="d3PieChart"></div>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+								<div class="panel height2">
+									<div class="panel-body">
+										<ul class="contacts">
+											<li class="client clearfix">
+												<img src="img/thumbs/user4.png" class="avatar" alt="Arise Admin Dashboard">
+												<div class="client-details">
+													<p>
+														<span class="name">Jeffery</span>
+														<span class="email">mail.jeff@mail.ro</span>
+													</p>
+													<ul class="icons-nav">
+														<li>
+															<a href="javascript:void(0)">
+																<i class="icon-speech-bubble text-red"></i>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li class="client clearfix">
+												<img src="img/thumbs/user5.png" class="avatar" alt="Arise Admin Dashboard">
+												<div class="client-details">
+													<p>
+														<span class="name">Lisa</span>
+														<span class="email">id.lisa@mail.io</span>
+													</p>
+													<ul class="icons-nav">
+														<li>
+															<a href="javascript:void(0)">
+																<i class="icon-speech-bubble text-yellow"></i>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li class="client clearfix">
+												<img src="img/thumbs/user10.png" class="avatar" alt="Arise Admin Dashboard">
+												<div class="client-details">
+													<p>
+														<span class="name">John</span>
+														<span class="email">johnvvn@mail.ro</span>
+													</p>
+													<ul class="icons-nav">
+														<li>
+															<a href="javascript:void(0)">
+																<i class="icon-speech-bubble text-green"></i>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li class="client clearfix">
+												<img src="img/thumbs/user6.png" class="avatar" alt="Arise Admin Dashboard" />
+												<div class="client-details">
+													<p>
+														<span class="name">Steve</span>
+														<span class="email">steeve@mail.com</span>
+													</p>
+													<ul class="icons-nav">
+														<li>
+															<a href="javascript:void(0)">
+																<i class="icon-speech-bubble text-blue"></i>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="panel height2">
+									<div class="panel-body no-padding">
+										<h4><i class="icon-file-text2 icon-2x text-blue"></i> Experience</h4>
+										<ul class="experience">
+											<li class="green">
+												<div class="detail-info">
+													<p class="date text-green">2014 - present</p>
+													<p class="message">Co-Founder, Chairman</p>
+													<p class="message">Arise Inc</p>
+												</div>
+											</li>
+											<li class="red">
+												<div class="detail-info">
+													<p class="date text-red">2010 - 2013</p>
+													<p class="message">Senior Developer</p>
+													<p class="message">Facebook</p>
+												</div>
+											</li>
+											<li class="blue">
+												<div class="detail-info">
+													<p class="date text-blue">1996 - 2004</p>
+													<p class="message">Web Designer</p>
+													<p class="message">Google Inc</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Row inside row ends -->
+					</div>
+				</div>
+				<!-- Row ends -->
+
+			</div>
+			<!-- Container fluid ends -->
+			
+		</div>
+		<!-- Dashboard Wrapper End -->
+
+		<!-- Footer Start -->
+		<footer>
+			Copyright Arise Admin <span>2016</span>
+		</footer>
+		<!-- Footer end -->
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.js"></script>
+
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		
+		<!-- jquery ScrollUp JS -->
+		<script src="js/scrollup/jquery.scrollUp.js"></script>
+
+		<!-- JVector Map -->
+		<script src="js/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+		<script src="js/jvectormap/gdp-data.js"></script>
+		<script src="js/jvectormap/dk-mill.js"></script>
+		<script type="text/javascript">
+			// Denmark
+			$(function(){
+				$('#mapDenmark').vectorMap({
+					map: 'dk_mill',
+					zoomOnScroll: false,
+					zoomButtons : false,
+					regionStyle: {
+						initial: {
+							fill: '#BB9BBF',
+						},
+						hover: {
+							fill: '#F6D683'
+						},
+						selected: {
+							fill: '#F6D683'
+						},
+					},
+					markerStyle: {
+						initial: {
+							fill: '#E64C66',
+							stroke: '#D2A968',
+							r: 12
+						}
+					},
+					backgroundColor: '#8D7590',
+					markers: [
+      			{
+      				latLng: [55.41, 12.34], name: 'Copenhagen',
+      			},
+      		]
+				});
+			});
+		</script>
+
+		<!-- D3 JS -->
+		<script src="js/d3/d3.v3.min.js"></script>
+		<script src="js/d3/d3pie.min.js"></script>
+		<script src="js/d3/d3.pie-custom.js"></script>
+
+		<!-- Custom JS -->
+		<script src="js/custom.js"></script>
+	</body>
+</html>

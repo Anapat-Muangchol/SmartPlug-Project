@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Publishing</title>
+</head>
+<body>
+<h3 id="send" style="color: red;">Sending...</h3>
+</body>
+</html>
+
+<script>
+    var mqtt = require('mqtt')
+    var client = mqtt.connect('mqtt://broker.hivemq.com')
+
+    client.on('connect', function () {
+        setInterval(function () {
+            document.getElementById("send").style.color = "green";
+
+            //sendding
+            client.publish('Student-BUU-IT-SmartPlug', 'Hello mqtt')
+
+            setTimeout(function () {
+                document.getElementById("send").style.color = "red";
+            }, 500);
+        }, 4000);
+    })
+
+</script>

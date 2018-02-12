@@ -1,0 +1,97 @@
+.red-border {
+    border: 1px solid #E91E63;
+}
+
+.help-block {
+    color: #ffffff;
+    font-size: 1em;
+    display: none;
+}
+
+#email:invalid + span#email-err {
+    display: inline;
+}
+
+.btn-default:hover {
+    color: white;
+    background-color: #E91E63;
+    border: 1px solid #556174;
+}
+
+.gradient-blue-purple-diagonal {
+    color: white;
+    background: #1e5799;
+    background: -moz-linear-gradient(45deg, #1e5799 0%, #207cca 29%, #aa4fcc 100%);
+    background: -webkit-linear-gradient(45deg, #1e5799 0%, #207cca 29%, #aa4fcc 100%);
+    background: linear-gradient(45deg, #1e5799 0%, #207cca 29%, #aa4fcc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#aa4fcc', GradientType=1);
+}
+
+.gradient-ffc107-ff9800-diagonal {
+    color: #77062d;
+    background: #ffc107;
+    background: -moz-linear-gradient(45deg, #ffc107 1%, #ff9800 100%);
+    background: -webkit-linear-gradient(45deg, #ffc107 1%, #ff9800 100%);
+    background: linear-gradient(45deg, #ffc107 1%, #ff9800 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc107', endColorstr='#ff9800', GradientType=1);
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.plug-title {
+    padding: 1rem;
+}
+
+.line-red {
+    height: 0.5rem;
+    background-color: #E91E63;
+}
+
+.panel {
+    background: transparent;
+}
+
+#first-letter-fname {
+    text-align: center;
+    margin: auto;
+    font-size: 7em;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 158px;
+    background-color: #141414;
+}
+
+#view-email-panel {
+    text-align: center;
+    margin-top: 25px;
+    word-wrap: break-word;
+}
+
+#view-user p {
+    font-size: 2em;
+    font-weight: 100;
+    color: white;
+}
+
+#view-user .panel-body {
+    border: 0;
+    border-bottom: 1px solid white;
+}
+
+#view-user #edit-btn {
+    width: 100%;
+    margin-top: 40px;
+}
+
+#editable-user-form #submit-panel {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#editable-user-form #submit-panel #submit-btn {
+    width: 100%;
+}
+
+/*# sourceMappingURL=profile.css.map */

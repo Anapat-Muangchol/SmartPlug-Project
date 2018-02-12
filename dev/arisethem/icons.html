@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Arise Admin Panel" />
+		<meta name="keywords" content="Admin, Dashboard, Bootstrap3, Sass, transform, CSS3, HTML5, Web design, UI Design, Responsive Dashboard, Responsive Admin, Admin Theme, Best Admin UI, Bootstrap Theme, Themeforest, Bootstrap, C3 Graphs, D3 Graphs, NVD3 Graphs, Admin Skin, Black Admin Dashboard, Grey Admin Dashboard, Dark Admin Dashboard, Simple Admin Dashboard, Simple Admin Theme, Simple Bootstrap Dashboard, " />
+		<meta name="author" content="Ramji" />
+		<link rel="shortcut icon" href="img/fav.png">
+		<title>Arise Admin Panel, Arise Dashboard</title>
+		
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+
+		<!-- Main CSS -->
+		<link href="css/main.css" rel="stylesheet" media="screen" />
+
+		<!-- Ion Icons -->
+		<link href="fonts/icomoon/icomoon.css" rel="stylesheet" />
+
+		<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+
+		<!-- Header starts -->
+		<header>
+
+			<!-- Logo starts -->
+			<a href="index.html" class="logo">
+				<img src="img/logo.png" alt="Arise Admin Dashboard Logo" />
+			</a>
+			<!-- Logo ends -->
+
+			<!-- Header actions starts -->
+			<ul id="header-actions" class="clearfix">
+				<li class="list-box hidden-xs dropdown">
+					<a id="drop2" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-warning2"></i>
+					</a>
+					<span class="info-label blue-bg">5</span>
+					<ul class="dropdown-menu imp-notify">
+						<li class="dropdown-header">You have 3 notifications</li>
+						<li>
+							<div class="icon">
+								<img src="img/thumbs/user10.png" alt="Arise Admin">
+							</div>
+							<div class="details">
+								<strong class="text-red">Rogie King</strong>
+								<span>Firefox is a free, open-source web browser from Mozilla.</span>
+							</div>
+						</li>
+						<li>
+							<div class="icon">
+								<img src="img/thumbs/user6.png" alt="Arise Admin">
+							</div>
+							<div class="details">
+								<strong class="text-green">Dan Cederholm</strong>
+								<span>IE is a free web browser from Microsoft.</span>
+							</div>
+						</li>
+						<li>
+							<div class="icon">
+								<img src="img/thumbs/user1.png" alt="Arise Admin">
+							</div>
+							<div class="details">
+								<strong class="text-blue">Justin Mezzell</strong>
+								<span>Safari is known for its sleek design and ease of use.</span>
+							</div>
+						</li>
+						<li class="dropdown-footer">See all the notifications</li>
+					</ul>
+				</li>
+				<li class="list-box hidden-xs dropdown">
+					<a id="drop3" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-archive2"></i>
+					</a>
+					<span class="info-label red-bg">3</span>
+					<ul class="dropdown-menu progress-info">
+						<li class="dropdown-header">You have 7 pending tasks</li>
+						<li>
+							<div class="progress-info">
+								<strong class="text-red">Critical</strong>
+								<span>New Dashboard Design</span>
+								<span class="pull-right text-red">20%</span>
+							</div>
+							<div class="progress progress-md no-margin">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+									<span class="sr-only">20% Complete (success)</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="progress-info">
+								<strong class="text-blue">Primary</strong>
+								<span>UI Changes in V2</span>
+								<span class="pull-right">90%</span>
+							</div>
+							<div class="progress progress-sm no-margin">
+								<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+									<span class="sr-only">90% Complete</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="progress-info">
+								<strong class="text-yellow">Urgent</strong>
+								<span>Bug Fix #123</span>
+								<span class="pull-right">60%</span>
+							</div>
+							<div class="progress progress-xs no-margin">
+								<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+									<span class="sr-only">60% Complete (warning)</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="progress-info">
+								<span>Bug Fix #111</span>
+								<span class="pull-right text-green">Complete</span>
+							</div>
+							<div class="progress progress-xs no-margin">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+									<span class="sr-only">100% Complete (warning)</span>
+								</div>
+							</div>
+						</li>
+						<li class="dropdown-footer">See all the tasks</li>
+					</ul>
+				</li>
+				<li class="list-box user-admin hidden-xs dropdown">
+					<div class="admin-details">
+						<div class="name">Sean</div>
+						<div class="designation">System Admin</div>
+					</div>
+					<a id="drop4" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-user"></i>
+					</a>
+					<ul class="dropdown-menu sm">
+						<li class="dropdown-content">
+							<a href="profile.html">Edit Profile</a>
+							<a href="forgot-pwd.html">Change Password</a>
+							<a href="styled-inputs.html">Settings</a>
+							<a href="login.html">Logout</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<button type="button" id="toggleMenu" class="toggle-menu">
+						<i class="collapse-menu-icon"></i>
+					</button>
+				</li>
+			</ul>
+			<!-- Header actions ends -->
+
+			<div class="custom-search hidden-sm hidden-xs">
+				<input type="text" class="search-query" placeholder="Search here ...">
+				<i class="icon-search3"></i>
+			</div>
+		</header>
+		<!-- Header ends -->
+
+		<!-- Left sidebar start -->
+		<div class="vertical-nav vertical-nav-sm">
+
+			<!-- Collapse menu starts -->
+			<button class="collapse-menu">
+				<i class="icon-menu2"></i>
+			</button>
+			<!-- Collapse menu ends -->
+
+			<!-- Current user starts -->
+			<div class="user-details clearfix">
+				<a href="profile.html" class="user-img">
+					<img src="img/thumbs/user1.png" alt="User Info">
+					<span class="likes-info">9</span>
+				</a>
+				<h5 class="user-name">Sean</h5>
+			</div>
+			<!-- Current user ends -->
+
+			<!-- Sidebar menu starts -->
+			<ul class="menu clearfix">
+				<li>
+					<a href="index.html">
+						<i class="icon-air-play"></i>
+						<span class="menu-item">Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-lab3"></i>
+						<span class="menu-item">Projects</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='tasks.html'>Tasks</a>
+						</li>
+						<li>
+							<a href='cards.html'>Cards</a>
+						</li>
+						<li>
+							<a href='users.html'>Users</a>
+						</li>
+						<li>
+							<a href='project-list.html'>Project List</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href='calendar.html'>
+						<i class="icon-calendar7"></i>
+						<span class="menu-item">Calendar</span>
+					</a>
+				</li>
+				<li>
+					<a href='widgets.html'>
+						<i class="icon-colours"></i>
+						<span class="menu-item">Widgets</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-head"></i>
+						<span class="menu-item">Pages</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='profile.html'>User Profile</a>
+						</li>
+						<li>
+							<a href='blog.html'>Blog</a>
+						</li>
+						<li>
+							<a href='invoice.html'>Invoice</a>
+						</li>
+						<li>
+							<a href='timeline.html'>Timeline</a>
+						</li>
+						<li>
+							<a href="pricing.html">Pricing</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-line-graph"></i>
+						<span class="menu-item">Graphs</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='c3-graphs.html'>C3 Graphs</a>
+						</li>
+						<li>
+							<a href='small-graphs.html'>Small Graphs</a>
+						</li>
+						<li>
+							<a href='maps.html'>Vector Maps</a>
+						</li>
+						<li>
+							<a href='flot.html'>Flot</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-layout5"></i>
+						<span class="menu-item">Forms</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='styled-inputs.html'>Styled Inputs</a>
+						</li>
+						<li>
+							<a href='check-radio.html'>Check &amp; Radios</a>
+						</li>
+						<li>
+							<a href='form-inputs.html'>Form Inputs</a>
+						</li>
+						<li>
+							<a href='editor.html'>WYSIWYG Editor</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href='gallery.html'>
+						<i class="icon-camera5"></i>
+						<span class="menu-item">Gallery</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-drop"></i>
+						<span class="menu-item">UI Elements</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='components.html'>Components</a>
+						</li>
+						<li>
+							<a href='progressbars.html'>Progress Bars</a>
+						</li>
+						<li>
+							<a href='notifications.html'>Notifications</a>
+						</li>
+						<li>
+							<a href='buttons.html'>Buttons</a>
+						</li>
+						<li>
+							<a href='typography.html'>Typography</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-layers4"></i>
+						<span class="menu-item">Layouts</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='custom-drag.html'>Drag &amp; Drop Panels</a>
+						</li>
+						<li>
+							<a href='custom-panels.html'>Custom Panels</a>
+						</li>
+						<li>
+							<a href='layout-sidebar.html'>Layout Sidebar</a>
+						</li>
+						<li>
+							<a href='default.html'>Basic Grid</a>
+						</li>
+						<li>
+							<a href='custom-grid.html'>Custom Grid</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-warning2"></i>
+						<span class="menu-item">Error Pages</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='login.html'>Login</a>
+						</li>
+						<li>
+							<a href='signup.html'>SignUp</a>
+						</li>
+						<li>
+							<a href='forgot-pwd.html'>Forgot Password</a>
+						</li>
+						<li>
+							<a href="maintenance.html">Maintenance</a>
+						</li>
+						<li>
+							<a href='coming-soon.html'>Coming Soon</a>
+						</li>
+						<li>
+							<a href='error.html'>Page not Found</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-grid2"></i>
+						<span class="menu-item">Tables</span>
+						<span class="down-arrow"></span>
+					</a>
+					<ul>
+						<li>
+							<a href='tables.html'>Tables</a>
+						</li>
+						<li>
+							<a href="data-tables.html">Data Tables</a>
+						</li>
+					</ul>
+				</li>
+				<li class="active selected">
+					<a href='icons.html'>
+						<i class="icon-bolt"></i>
+						<span class="menu-item">Icons</span>
+					</a>
+				</li>
+			</ul>
+			<!-- Sidebar menu ends -->
+		</div>
+		<!-- Left sidebar end -->
+
+		<!-- Dashboard Wrapper Start -->
+		<div class="dashboard-wrapper">
+
+			<!-- Container fluid Starts -->
+			<div class="container-fluid">
+
+				<!-- Top Bar Starts -->
+				<div class="top-bar clearfix">
+					<div class="row gutter">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<div class="page-title">
+								<h3>Icons</h3>
+								<p>Small description about this page / <a href="index.html">Home</a></p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<ul class="right-stats" id="mini-nav-right">
+								<li>
+									<a href="javascript:void(0)" class="btn btn-danger"><span>76</span>Sales</a>
+								</li>
+								<li>
+									<a href="tasks.html" class="btn btn-success">
+										<span>18</span>Tasks</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)" class="btn btn-info"><i class="icon-download6"></i> Export</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- Top Bar Ends -->
+
+				<!-- Row starts -->
+				<div class="row gutter">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="panel">
+							<div class="panel-heading">
+								<h4 class="panel-title">Icomoon</h4>
+							</div>
+							<div class="panel-body icons">
+								<span class="icon-comment-stroke"></span>
+								<span class="icon-dial"></span>
+								<span class="icon-cog2"></span>
+								<span class="icon-calendar3"></span>
+								<span class="icon-calendar-alt-stroke"></span>
+								<span class="icon-mail2"></span>
+								<span class="icon-document-fill"></span>
+								<span class="icon-link"></span>
+								<span class="icon-bolt"></span>
+								<span class="icon-move"></span>
+								<span class="icon-equalizer"></span>
+								<span class="icon-magnifying-glass"></span>
+								<span class="icon-trash-stroke"></span>
+								<span class="icon-spin-alt"></span>
+								<span class="icon-fullscreen-exit"></span>
+								<span class="icon-fullscreen-exit-alt"></span>
+								<span class="icon-fullscreen"></span>
+								<span class="icon-fullscreen-alt"></span>
+								<span class="icon-at"></span>
+								<span class="icon-book-alt2"></span>
+								<span class="icon-layers-alt"></span>
+								<span class="icon-layers2"></span>
+								<span class="icon-image2"></span>
+								<span class="icon-camera3"></span>
+								<span class="icon-aperture2"></span>
+								<span class="icon-chart-alt"></span>
+								<span class="icon-eye4"></span>
+								<span class="icon-unlock-stroke"></span>
+								<span class="icon-sun-stroke"></span>
+								<span class="icon-sun-fill"></span>
+								<span class="icon-target3"></span>
+								<span class="icon-paperclip2"></span>
+								<span class="icon-pencil2"></span>
+								<span class="icon-droplet"></span>
+								<span class="icon-image"></span>
+								<span class="icon-images"></span>
+								<span class="icon-camera2"></span>
+								<span class="icon-books"></span>
+								<span class="icon-library2"></span>
+								<span class="icon-file-text"></span>
+								<span class="icon-profile"></span>
+								<span class="icon-file-text2"></span>
+								<span class="icon-stack"></span>
+								<span class="icon-folder4"></span>
+								<span class="icon-price-tags"></span>
+								<span class="icon-ticket3"></span>
+								<span class="icon-cart"></span>
+								<span class="icon-coin-dollar"></span>
+								<span class="icon-coin-euro"></span>
+								<span class="icon-coin-pound"></span>
+								<span class="icon-coin-yen"></span>
+								<span class="icon-calculator"></span>
+								<span class="icon-envelop"></span>
+								<span class="icon-compass3"></span>
+								<span class="icon-map2"></span>
+								<span class="icon-alarm2"></span>
+								<span class="icon-bell2"></span>
+								<span class="icon-calendar2"></span>
+								<span class="icon-display"></span>
+								<span class="icon-laptop2"></span>
+								<span class="icon-mobile"></span>
+								<span class="icon-mobile2"></span>
+								<span class="icon-tablet"></span>
+								<span class="icon-tv"></span>
+								<span class="icon-drawer"></span>
+								<span class="icon-drawer2"></span>
+								<span class="icon-download2"></span>
+								<span class="icon-database"></span>
+								<span class="icon-user-check"></span>
+								<span class="icon-hour-glass"></span>
+								<span class="icon-search5"></span>
+								<span class="icon-equalizer4"></span>
+								<span class="icon-equalizer2"></span>
+								<span class="icon-cog"></span>
+								<span class="icon-cogs"></span>
+								<span class="icon-aid-kit"></span>
+								<span class="icon-pie-chart"></span>
+								<span class="icon-stats-bars2"></span>
+								<span class="icon-trophy3"></span>
+								<span class="icon-gift2"></span>
+								<span class="icon-mug"></span>
+								<span class="icon-leaf"></span>
+								<span class="icon-meter"></span>
+								<span class="icon-fire"></span>
+								<span class="icon-lab"></span>
+								<span class="icon-magnet3"></span>
+								<span class="icon-bin"></span>
+								<span class="icon-bin2"></span>
+								<span class="icon-briefcase4"></span>
+								<span class="icon-shield2"></span>
+								<span class="icon-power2"></span>
+								<span class="icon-clipboard"></span>
+								<span class="icon-list-numbered"></span>
+								<span class="icon-menu"></span>
+								<span class="icon-download22"></span>
+								<span class="icon-upload22"></span>
+								<span class="icon-download3"></span>
+								<span class="icon-upload3"></span>
+								<span class="icon-sphere"></span>
+								<span class="icon-earth"></span>
+								<span class="icon-flag2"></span>
+								<span class="icon-attachment2"></span>
+								<span class="icon-eye3"></span>
+								<span class="icon-eye-plus"></span>
+								<span class="icon-star-half"></span>
+								<span class="icon-star-full"></span>
+								<span class="icon-heart"></span>
+								<span class="icon-man"></span>
+								<span class="icon-woman"></span>
+								<span class="icon-man-woman"></span>
+								<span class="icon-hipster"></span>
+								<span class="icon-point-up"></span>
+								<span class="icon-point-right"></span>
+								<span class="icon-point-down"></span>
+								<span class="icon-point-left"></span>
+								<span class="icon-warning4"></span>
+								<span class="icon-spell-check"></span>
+								<span class="icon-enter"></span>
+								<span class="icon-exit"></span>
+								<span class="icon-radio-checked"></span>
+								<span class="icon-radio-checked2"></span>
+								<span class="icon-ungroup"></span>
+								<span class="icon-filter"></span>
+								<span class="icon-font"></span>
+								<span class="icon-font-size"></span>
+								<span class="icon-share"></span>
+								<span class="icon-github2"></span>
+								<span class="icon-appleinc"></span>
+								<span class="icon-android"></span>
+								<span class="icon-windows8"></span>
+								<span class="icon-chrome"></span>
+								<span class="icon-firefox"></span>
+								<span class="icon-IE"></span>
+								<span class="icon-edge"></span>
+								<span class="icon-safari"></span>
+								<span class="icon-opera"></span>
+								<span class="icon-number"></span>
+								<span class="icon-number2"></span>
+								<span class="icon-number3"></span>
+								<span class="icon-number4"></span>
+								<span class="icon-number5"></span>
+								<span class="icon-number6"></span>
+								<span class="icon-number7"></span>
+								<span class="icon-number8"></span>
+								<span class="icon-number9"></span>
+								<span class="icon-number10"></span>
+								<span class="icon-number11"></span>
+								<span class="icon-number12"></span>
+								<span class="icon-number13"></span>
+								<span class="icon-number14"></span>
+								<span class="icon-number15"></span>
+								<span class="icon-number16"></span>
+								<span class="icon-number17"></span>
+								<span class="icon-number18"></span>
+								<span class="icon-number19"></span>
+								<span class="icon-number20"></span>
+								<span class="icon-quote"></span>
+								<span class="icon-quote2"></span>
+								<span class="icon-tag"></span>
+								<span class="icon-tag2"></span>
+								<span class="icon-link2"></span>
+								<span class="icon-link3"></span>
+								<span class="icon-calendar4"></span>
+								<span class="icon-calendar6"></span>
+								<span class="icon-phone"></span>
+								<span class="icon-tablet2"></span>
+								<span class="icon-monitor"></span>
+								<span class="icon-ipod"></span>
+								<span class="icon-camera6"></span>
+								<span class="icon-camera7"></span>
+								<span class="icon-film"></span>
+								<span class="icon-film2"></span>
+								<span class="icon-drink"></span>
+								<span class="icon-coffee"></span>
+								<span class="icon-cake"></span>
+								<span class="icon-inbox"></span>
+								<span class="icon-download4"></span>
+								<span class="icon-upload2"></span>
+								<span class="icon-inbox2"></span>
+								<span class="icon-checkmark"></span>
+								<span class="icon-checkmark2"></span>
+								<span class="icon-cancel"></span>
+								<span class="icon-cancel2"></span>
+								<span class="icon-plus"></span>
+								<span class="icon-plus2"></span>
+								<span class="icon-minus"></span>
+								<span class="icon-minus2"></span>
+								<span class="icon-notice"></span>
+								<span class="icon-notice2"></span>
+								<span class="icon-cog3"></span>
+								<span class="icon-cog4"></span>
+								<span class="icon-warning2"></span>
+								<span class="icon-health"></span>
+								<span class="icon-suitcase"></span>
+								<span class="icon-suitcase2"></span>
+								<span class="icon-suitcase3"></span>
+								<span class="icon-pictures"></span>
+								<span class="icon-watch"></span>
+								<span class="icon-chronometer"></span>
+								<span class="icon-watch2"></span>
+								<span class="icon-wallet2"></span>
+								<span class="icon-eye"></span>
+								<span class="icon-chart"></span>
+								<span class="icon-chart2"></span>
+								<span class="icon-chart3"></span>
+								<span class="icon-chart4"></span>
+								<span class="icon-chart5"></span>
+								<span class="icon-basket2"></span>
+								<span class="icon-folder2"></span>
+								<span class="icon-alarm"></span>
+								<span class="icon-image3"></span>
+								<span class="icon-open"></span>
+								<span class="icon-sale"></span>
+								<span class="icon-map5"></span>
+								<span class="icon-trashcan"></span>
+								<span class="icon-graduate"></span>
+								<span class="icon-lab2"></span>
+								<span class="icon-football"></span>
+								<span class="icon-bowling"></span>
+								<span class="icon-baseball"></span>
+								<span class="icon-soccer"></span>
+								<span class="icon-washingmachine"></span>
+								<span class="icon-mouse"></span>
+								<span class="icon-smiley"></span>
+								<span class="icon-medal2"></span>
+								<span class="icon-medal3"></span>
+								<span class="icon-cord"></span>
+								<span class="icon-stack2"></span>
+								<span class="icon-stack3"></span>
+								<span class="icon-stack4"></span>
+								<span class="icon-lamp"></span>
+								<span class="icon-lamp2"></span>
+								<span class="icon-archive"></span>
+								<span class="icon-megaphone2"></span>
+								<span class="icon-megaphone4"></span>
+								<span class="icon-diamond"></span>
+								<span class="icon-layout6"></span>
+								<span class="icon-layout7"></span>
+								<span class="icon-layout8"></span>
+								<span class="icon-layout9"></span>
+								<span class="icon-layout10"></span>
+								<span class="icon-layout"></span>
+								<span class="icon-layout2"></span>
+								<span class="icon-layout3"></span>
+								<span class="icon-layout11"></span>
+								<span class="icon-layout4"></span>
+								<span class="icon-layout12"></span>
+								<span class="icon-tools2"></span>
+								<span class="icon-chat2"></span>
+								<span class="icon-chat3"></span>
+								<span class="icon-chat4"></span>
+								<span class="icon-equalizer3"></span>
+								<span class="icon-resize"></span>
+								<span class="icon-download5"></span>
+								<span class="icon-library"></span>
+								<span class="icon-stats"></span>
+								<span class="icon-stats2"></span>
+								<span class="icon-abacus"></span>
+								<span class="icon-edit"></span>
+								<span class="icon-crop"></span>
+								<span class="icon-square2"></span>
+								<span class="icon-square"></span>
+								<span class="icon-circle"></span>
+								<span class="icon-coins"></span>
+								<span class="icon-pig"></span>
+								<span class="icon-bookmark"></span>
+								<span class="icon-bookmark2"></span>
+								<span class="icon-addressbook"></span>
+								<span class="icon-info2"></span>
+								<span class="icon-car"></span>
+								<span class="icon-truck"></span>
+								<span class="icon-bike"></span>
+								<span class="icon-rocket"></span>
+								<span class="icon-popout"></span>
+								<span class="icon-popin"></span>
+								<span class="icon-target2"></span>
+								<span class="icon-badge"></span>
+								<span class="icon-ticket"></span>
+								<span class="icon-stop"></span>
+								<span class="icon-checked"></span>
+								<span class="icon-error"></span>
+								<span class="icon-add"></span>
+								<span class="icon-minus3"></span>
+								<span class="icon-pictures2"></span>
+								<span class="icon-globe2"></span>
+								<span class="icon-globe3"></span>
+								<span class="icon-shipping"></span>
+								<span class="icon-magnet2"></span>
+								<span class="icon-tv3"></span>
+								<span class="icon-trash2"></span>
+								<span class="icon-user2"></span>
+								<span class="icon-search6"></span>
+								<span class="icon-settings"></span>
+								<span class="icon-camera8"></span>
+								<span class="icon-tag3"></span>
+								<span class="icon-bulb"></span>
+								<span class="icon-display2"></span>
+								<span class="icon-stack5"></span>
+								<span class="icon-news"></span>
+								<span class="icon-like"></span>
+								<span class="icon-photo"></span>
+								<span class="icon-note2"></span>
+								<span class="icon-params"></span>
+								<span class="icon-banknote"></span>
+								<span class="icon-data"></span>
+								<span class="icon-study"></span>
+								<span class="icon-lab3"></span>
+								<span class="icon-food"></span>
+								<span class="icon-fire2"></span>
+								<span class="icon-clip"></span>
+								<span class="icon-shop2"></span>
+								<span class="icon-calendar7"></span>
+								<span class="icon-wallet3"></span>
+								<span class="icon-truck2"></span>
+								<span class="icon-world"></span>
+								<span class="icon-mobile3"></span>
+								<span class="icon-laptop"></span>
+								<span class="icon-desktop"></span>
+								<span class="icon-tablet3"></span>
+								<span class="icon-phone2"></span>
+								<span class="icon-documents"></span>
+								<span class="icon-search"></span>
+								<span class="icon-newspaper"></span>
+								<span class="icon-notebook"></span>
+								<span class="icon-browser"></span>
+								<span class="icon-calendar"></span>
+								<span class="icon-presentation"></span>
+								<span class="icon-picture"></span>
+								<span class="icon-video"></span>
+								<span class="icon-camera"></span>
+								<span class="icon-toolbox"></span>
+								<span class="icon-briefcase"></span>
+								<span class="icon-wallet"></span>
+								<span class="icon-gift"></span>
+								<span class="icon-bargraph"></span>
+								<span class="icon-grid"></span>
+								<span class="icon-expand"></span>
+								<span class="icon-focus"></span>
+								<span class="icon-edit2"></span>
+								<span class="icon-adjustments"></span>
+								<span class="icon-ribbon"></span>
+								<span class="icon-lock4"></span>
+								<span class="icon-megaphone"></span>
+								<span class="icon-shield"></span>
+								<span class="icon-trophy"></span>
+								<span class="icon-map"></span>
+								<span class="icon-puzzle"></span>
+								<span class="icon-basket"></span>
+								<span class="icon-envelope"></span>
+								<span class="icon-streetsign"></span>
+								<span class="icon-telescope"></span>
+								<span class="icon-gears"></span>
+								<span class="icon-paperclip"></span>
+								<span class="icon-pricetags"></span>
+								<span class="icon-lightbulb"></span>
+								<span class="icon-layers"></span>
+								<span class="icon-pencil"></span>
+								<span class="icon-tools"></span>
+								<span class="icon-tools-2"></span>
+								<span class="icon-paintbrush"></span>
+								<span class="icon-linegraph"></span>
+								<span class="icon-strategy"></span>
+								<span class="icon-beaker"></span>
+								<span class="icon-caution"></span>
+								<span class="icon-recycle"></span>
+								<span class="icon-anchor"></span>
+								<span class="icon-profile-male"></span>
+								<span class="icon-profile-female"></span>
+								<span class="icon-wine"></span>
+								<span class="icon-hotairballoon"></span>
+								<span class="icon-globe"></span>
+								<span class="icon-map-pin"></span>
+								<span class="icon-dial2"></span>
+								<span class="icon-chat"></span>
+								<span class="icon-upload"></span>
+								<span class="icon-download"></span>
+								<span class="icon-target4"></span>
+								<span class="icon-piechart"></span>
+								<span class="icon-speedometer"></span>
+								<span class="icon-global"></span>
+								<span class="icon-compass"></span>
+								<span class="icon-clock"></span>
+								<span class="icon-aperture"></span>
+								<span class="icon-facebook"></span>
+								<span class="icon-twitter"></span>
+								<span class="icon-googleplus"></span>
+								<span class="icon-rss"></span>
+								<span class="icon-tumblr"></span>
+								<span class="icon-linkedin"></span>
+								<span class="icon-dribbble"></span>
+								<span class="icon-mail-envelope-open"></span>
+								<span class="icon-mail-envelope-open2"></span>
+								<span class="icon-mail-envelope-open3"></span>
+								<span class="icon-key"></span>
+								<span class="icon-information"></span>
+								<span class="icon-information2"></span>
+								<span class="icon-note"></span>
+								<span class="icon-note-list"></span>
+								<span class="icon-note-checked"></span>
+								<span class="icon-inbox-document-text"></span>
+								<span class="icon-inbox-download"></span>
+								<span class="icon-inbox-upload"></span>
+								<span class="icon-folder"></span>
+								<span class="icon-folders"></span>
+								<span class="icon-folder-search"></span>
+								<span class="icon-search2"></span>
+								<span class="icon-search4"></span>
+								<span class="icon-lock"></span>
+								<span class="icon-combination-lock"></span>
+								<span class="icon-printer-text"></span>
+								<span class="icon-shredder"></span>
+								<span class="icon-cloud-download"></span>
+								<span class="icon-cloud-error"></span>
+								<span class="icon-inbox-filled"></span>
+								<span class="icon-inbox-filled2"></span>
+								<span class="icon-package"></span>
+								<span class="icon-box-filled"></span>
+								<span class="icon-box"></span>
+								<span class="icon-box2"></span>
+								<span class="icon-box-bookmark"></span>
+								<span class="icon-basketball"></span>
+								<span class="icon-tennis-ball"></span>
+								<span class="icon-billiard-ball"></span>
+								<span class="icon-trophy4"></span>
+								<span class="icon-trophy-one"></span>
+								<span class="icon-trophy2"></span>
+								<span class="icon-volleyball"></span>
+								<span class="icon-stop-watch"></span>
+								<span class="icon-stop-watch3"></span>
+								<span class="icon-stop-watch2"></span>
+								<span class="icon-golf"></span>
+								<span class="icon-award"></span>
+								<span class="icon-award2"></span>
+								<span class="icon-award3"></span>
+								<span class="icon-award5"></span>
+								<span class="icon-award4"></span>
+								<span class="icon-medal"></span>
+								<span class="icon-medal4"></span>
+								<span class="icon-volleyball-water"></span>
+								<span class="icon-volleyball-water2"></span>
+								<span class="icon-target-arrow"></span>
+								<span class="icon-target"></span>
+								<span class="icon-cloud-sun"></span>
+								<span class="icon-cloud-moon"></span>
+								<span class="icon-cloud-rain"></span>
+								<span class="icon-cloud-sun-rain"></span>
+								<span class="icon-cloud-moon-rain"></span>
+								<span class="icon-cloud-snow"></span>
+								<span class="icon-cloud-sun-snow"></span>
+								<span class="icon-cloud-moon-snow"></span>
+								<span class="icon-cloud-sun-lightning"></span>
+								<span class="icon-cloud-moon-lightning"></span>
+								<span class="icon-cloud-raindrops"></span>
+								<span class="icon-cloud-sun-raindrops"></span>
+								<span class="icon-cloud-moon-raindrops"></span>
+								<span class="icon-cloud-sun-snowflakes"></span>
+								<span class="icon--cloud-sun-fog"></span>
+								<span class="icon--cloud-sun-fog2"></span>
+								<span class="icon-cloud-moon-fog"></span>
+								<span class="icon-cloud-moon-fog2"></span>
+								<span class="icon-moon-stars"></span>
+								<span class="icon-sun"></span>
+								<span class="icon-rainbow"></span>
+								<span class="icon-raindrop"></span>
+								<span class="icon-raindrop2"></span>
+								<span class="icon-sunglasses"></span>
+								<span class="icon-clouds"></span>
+								<span class="icon-full-moon"></span>
+								<span class="icon-half-moon"></span>
+								<span class="icon-crescent"></span>
+								<span class="icon-barometer"></span>
+								<span class="icon-barometer2"></span>
+								<span class="icon-warning"></span>
+								<span class="icon-compass2"></span>
+								<span class="icon-compass4"></span>
+								<span class="icon-flashed-face"></span>
+								<span class="icon-neutral-face"></span>
+								<span class="icon-smiling-face"></span>
+								<span class="icon-smiling-face2"></span>
+								<span class="icon-face-moustache"></span>
+								<span class="icon-face-glasses"></span>
+								<span class="icon-smirking-face-sunglasses"></span>
+								<span class="icon-file-numbers"></span>
+								<span class="icon-file-numbers2"></span>
+								<span class="icon-file-png"></span>
+								<span class="icon-file-png2"></span>
+								<span class="icon-file-pdf"></span>
+								<span class="icon-file-pdf2"></span>
+								<span class="icon-file-mp3"></span>
+								<span class="icon-file-mp32"></span>
+								<span class="icon-file-mp4"></span>
+								<span class="icon-file-mp42"></span>
+								<span class="icon-file-jpg"></span>
+								<span class="icon-file-jpg2"></span>
+								<span class="icon-file-key"></span>
+								<span class="icon-file-key2"></span>
+								<span class="icon-file-html"></span>
+								<span class="icon-file-html2"></span>
+								<span class="icon-file-css"></span>
+								<span class="icon-file-css2"></span>
+								<span class="icon-file-psd"></span>
+								<span class="icon-file-psd2"></span>
+								<span class="icon-file-tiff"></span>
+								<span class="icon-file-tiff2"></span>
+								<span class="icon-file-php"></span>
+								<span class="icon-file-php2"></span>
+								<span class="icon-file-doc"></span>
+								<span class="icon-file-doc2"></span>
+								<span class="icon-file-xml"></span>
+								<span class="icon-file-xml2"></span>
+								<span class="icon-file-txt"></span>
+								<span class="icon-file-txt2"></span>
+								<span class="icon-file-zip"></span>
+								<span class="icon-file-zip2"></span>
+								<span class="icon-file-tgz"></span>
+								<span class="icon-file-tgz2"></span>
+								<span class="icon-file-gif"></span>
+								<span class="icon-file-gif2"></span>
+								<span class="icon-document-file-numbers"></span>
+								<span class="icon-document-file-pdf"></span>
+								<span class="icon-document-file-pdf2"></span>
+								<span class="icon-document-file-mp3"></span>
+								<span class="icon-document-file-mp4"></span>
+								<span class="icon-document-file-txt"></span>
+								<span class="icon-document-file-txt2"></span>
+								<span class="icon-document-file-tgz"></span>
+								<span class="icon-document-file-tgz2"></span>
+								<span class="icon-add-to-list"></span>
+								<span class="icon-remove-user"></span>
+								<span class="icon-warning3"></span>
+								<span class="icon-bookmarks"></span>
+								<span class="icon-chevron-down"></span>
+								<span class="icon-chevron-left"></span>
+								<span class="icon-chevron-right"></span>
+								<span class="icon-chevron-small-down"></span>
+								<span class="icon-chevron-small-left"></span>
+								<span class="icon-chevron-small-right"></span>
+								<span class="icon-chevron-small-up"></span>
+								<span class="icon-chevron-up"></span>
+								<span class="icon-controller-record"></span>
+								<span class="icon-controller-stop"></span>
+								<span class="icon-dots-three-horizontal"></span>
+								<span class="icon-dots-two-horizontal"></span>
+								<span class="icon-dots-two-vertical"></span>
+								<span class="icon-download6"></span>
+								<span class="icon-install"></span>
+								<span class="icon-layers3"></span>
+								<span class="icon-open-book"></span>
+								<span class="icon-save"></span>
+								<span class="icon-triangle-down"></span>
+								<span class="icon-triangle-left"></span>
+								<span class="icon-triangle-right"></span>
+								<span class="icon-triangle-up"></span>
+								<span class="icon-uninstall"></span>
+								<span class="icon-upload4"></span>
+								<span class="icon-add-user"></span>
+								<span class="icon-air"></span>
+								<span class="icon-aircraft-take-off"></span>
+								<span class="icon-aircraft"></span>
+								<span class="icon-align-bottom"></span>
+								<span class="icon-archive2"></span>
+								<span class="icon-area-graph"></span>
+								<span class="icon-attachment"></span>
+								<span class="icon-blackboard"></span>
+								<span class="icon-bowl"></span>
+								<span class="icon-briefcase2"></span>
+								<span class="icon-browser2"></span>
+								<span class="icon-bucket"></span>
+								<span class="icon-cake2"></span>
+								<span class="icon-calendar5"></span>
+								<span class="icon-camera4"></span>
+								<span class="icon-ccw"></span>
+								<span class="icon-chat5"></span>
+								<span class="icon-check2"></span>
+								<span class="icon-circle-with-cross"></span>
+								<span class="icon-circle-with-minus"></span>
+								<span class="icon-circle-with-plus"></span>
+								<span class="icon-circle2"></span>
+								<span class="icon-circular-graph"></span>
+								<span class="icon-clock3"></span>
+								<span class="icon-code"></span>
+								<span class="icon-cog5"></span>
+								<span class="icon-colours"></span>
+								<span class="icon-credit"></span>
+								<span class="icon-cross2"></span>
+								<span class="icon-cycle"></span>
+								<span class="icon-database2"></span>
+								<span class="icon-direction"></span>
+								<span class="icon-drink2"></span>
+								<span class="icon-drive"></span>
+								<span class="icon-drop2"></span>
+								<span class="icon-email"></span>
+								<span class="icon-export"></span>
+								<span class="icon-flag3"></span>
+								<span class="icon-flash"></span>
+								<span class="icon-folder-images"></span>
+								<span class="icon-folder-music"></span>
+								<span class="icon-folder-video"></span>
+								<span class="icon-folder5"></span>
+								<span class="icon-game-controller"></span>
+								<span class="icon-gauge"></span>
+								<span class="icon-globe4"></span>
+								<span class="icon-hair-cross"></span>
+								<span class="icon-heart2"></span>
+								<span class="icon-help-with-circle"></span>
+								<span class="icon-image-inverted"></span>
+								<span class="icon-image4"></span>
+								<span class="icon-info-with-circle"></span>
+								<span class="icon-info"></span>
+								<span class="icon-lab-flask"></span>
+								<span class="icon-landline"></span>
+								<span class="icon-laptop3"></span>
+								<span class="icon-leaf2"></span>
+								<span class="icon-level-down"></span>
+								<span class="icon-level-up"></span>
+								<span class="icon-light-up"></span>
+								<span class="icon-line-graph"></span>
+								<span class="icon-location"></span>
+								<span class="icon-lock-open"></span>
+								<span class="icon-lock2"></span>
+								<span class="icon-log-out"></span>
+								<span class="icon-login"></span>
+								<span class="icon-magnet"></span>
+								<span class="icon-map3"></span>
+								<span class="icon-medal5"></span>
+								<span class="icon-megaphone3"></span>
+								<span class="icon-menu2"></span>
+								<span class="icon-message"></span>
+								<span class="icon-new-message"></span>
+								<span class="icon-old-phone"></span>
+								<span class="icon-palette"></span>
+								<span class="icon-paper-plane"></span>
+								<span class="icon-pie-chart2"></span>
+								<span class="icon-print"></span>
+								<span class="icon-progress-full"></span>
+								<span class="icon-reply-all"></span>
+								<span class="icon-reply"></span>
+								<span class="icon-rocket2"></span>
+								<span class="icon-shield3"></span>
+								<span class="icon-shop"></span>
+								<span class="icon-shopping-bag"></span>
+								<span class="icon-shopping-basket"></span>
+								<span class="icon-shopping-cart"></span>
+								<span class="icon-sound-mix"></span>
+								<span class="icon-sports-club"></span>
+								<span class="icon-star-outlined"></span>
+								<span class="icon-star"></span>
+								<span class="icon-stopwatch"></span>
+								<span class="icon-thumbs-down"></span>
+								<span class="icon-thumbs-up"></span>
+								<span class="icon-thunder-cloud"></span>
+								<span class="icon-ticket2"></span>
+								<span class="icon-time-slot"></span>
+								<span class="icon-tree"></span>
+								<span class="icon-trophy5"></span>
+								<span class="icon-tv2"></span>
+								<span class="icon-typing"></span>
+								<span class="icon-unread"></span>
+								<span class="icon-user"></span>
+								<span class="icon-users"></span>
+								<span class="icon-vinyl"></span>
+								<span class="icon-water"></span>
+								<span class="icon-behance"></span>
+								<span class="icon-flattr"></span>
+								<span class="icon-foursquare"></span>
+								<span class="icon-google-drive"></span>
+								<span class="icon-grooveshark"></span>
+								<span class="icon-skype"></span>
+								<span class="icon-dribbble-with-circle"></span>
+								<span class="icon-dribbble2"></span>
+								<span class="icon-facebook-with-circle"></span>
+								<span class="icon-facebook2"></span>
+								<span class="icon-github"></span>
+								<span class="icon-google-with-circle"></span>
+								<span class="icon-google"></span>
+								<span class="icon-instagram-with-circle"></span>
+								<span class="icon-linkedin-with-circle"></span>
+								<span class="icon-linkedin2"></span>
+								<span class="icon-pinterest-with-circle"></span>
+								<span class="icon-pinterest"></span>
+								<span class="icon-tumblr2"></span>
+								<span class="icon-twitter-with-circle"></span>
+								<span class="icon-twitter2"></span>
+								<span class="icon-vimeo-with-circle"></span>
+								<span class="icon-vimeo"></span>
+								<span class="icon-youtube-with-circle"></span>
+								<span class="icon-youtube"></span>
+								<span class="icon-eye2"></span>
+								<span class="icon-paper-clip"></span>
+								<span class="icon-mail"></span>
+								<span class="icon-layout5"></span>
+								<span class="icon-bell"></span>
+								<span class="icon-lock3"></span>
+								<span class="icon-unlock"></span>
+								<span class="icon-image5"></span>
+								<span class="icon-target5"></span>
+								<span class="icon-clock2"></span>
+								<span class="icon-air-play"></span>
+								<span class="icon-camera5"></span>
+								<span class="icon-disc"></span>
+								<span class="icon-monitor2"></span>
+								<span class="icon-server"></span>
+								<span class="icon-cog6"></span>
+								<span class="icon-align-justify"></span>
+								<span class="icon-align-left"></span>
+								<span class="icon-align-center"></span>
+								<span class="icon-align-right"></span>
+								<span class="icon-layers4"></span>
+								<span class="icon-paper"></span>
+								<span class="icon-search3"></span>
+								<span class="icon-folder3"></span>
+								<span class="icon-drop"></span>
+								<span class="icon-map4"></span>
+								<span class="icon-head"></span>
+								<span class="icon-briefcase3"></span>
+								<span class="icon-speech-bubble"></span>
+								<span class="icon-globe5"></span>
+								<span class="icon-box3"></span>
+								<span class="icon-power"></span>
+								<span class="icon-esc"></span>
+								<span class="icon-pie-graph"></span>
+								<span class="icon-content-right"></span>
+								<span class="icon-grid2"></span>
+								<span class="icon-grid-2"></span>
+								<span class="icon-loader"></span>
+								<span class="icon-flag"></span>
+								<span class="icon-trash"></span>
+								<span class="icon-plus3"></span>
+								<span class="icon-minus4"></span>
+								<span class="icon-check"></span>
+								<span class="icon-cross"></span>
+								<span class="icon-delete"></span>
+								<span class="icon-menu3"></span>
+								<span class="icon-archive3"></span>
+								<span class="icon-inbox3"></span>
+								<span class="icon-outbox"></span>
+								<span class="icon-open2"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Row ends -->
+
+			</div>
+			<!-- Container fluid ends -->
+			
+		</div>
+		<!-- Dashboard Wrapper End -->
+
+		<!-- Footer Start -->
+		<footer>
+			Copyright Arise Admin <span>2016</span>
+		</footer>
+		<!-- Footer end -->
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.js"></script>
+
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		
+		<!-- jquery ScrollUp JS -->
+		<script src="js/scrollup/jquery.scrollUp.js"></script>
+
+		<!-- Custom JS -->
+		<script src="js/custom.js"></script>
+	</body>
+</html>

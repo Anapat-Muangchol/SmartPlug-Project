@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Subscribe</title>
+</head>
+<body>
+<h3 id="receive"></h3>
+</body>
+</html>
+
+<script>
+    var mqtt = require('mqtt')
+    var client = mqtt.connect('mqtt://broker.hivemq.com')
+
+    client.on('connect', function () {
+        client.subscribe('Student-BUU-IT-SmartPlug')
+    })
+
+    client.on('message', function (topic, message) {
+        // message is Buffer
+        console.log(message.toString())
+        document.getElementById("receive").innerHTML += message.toString() + "<br>"
+        //client.end()
+    })
+
+</script>

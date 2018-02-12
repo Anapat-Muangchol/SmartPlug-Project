@@ -1,0 +1,57 @@
+.red-border {
+    border: 1px solid #E91E63;
+}
+
+.help-block {
+    color: #E91E63;
+    display: none;
+}
+
+.btn-default:hover {
+    color: white;
+    background-color: #E91E63;
+    border: 1px solid #556174;
+}
+
+.gradient-blue-purple-diagonal {
+    color: white;
+    background: #1e5799;
+    background: -moz-linear-gradient(45deg, #1e5799 0%, #207cca 29%, #aa4fcc 100%);
+    background: -webkit-linear-gradient(45deg, #1e5799 0%, #207cca 29%, #aa4fcc 100%);
+    background: linear-gradient(45deg, #1e5799 0%, #207cca 29%, #aa4fcc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#aa4fcc', GradientType=1);
+}
+
+.gradient-ffc107-ff9800-diagonal {
+    color: #77062d;
+    background: #ffc107;
+    background: -moz-linear-gradient(45deg, #ffc107 1%, #ff9800 100%);
+    background: -webkit-linear-gradient(45deg, #ffc107 1%, #ff9800 100%);
+    background: linear-gradient(45deg, #ffc107 1%, #ff9800 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc107', endColorstr='#ff9800', GradientType=1);
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.plug-title {
+    padding: 1rem;
+    background-color: #FFEB3B;
+    color: #444444;
+}
+
+.line-red {
+    height: 0.5rem;
+    background-color: #E91E63;
+}
+
+.panel {
+    background: transparent;
+}
+
+#submit-btn {
+    width: 100%;
+}
+
+/*# sourceMappingURL=addplug.css.map */

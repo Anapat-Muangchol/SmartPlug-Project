@@ -1,0 +1,111 @@
+body {
+    color: #FFEB3B;
+    font-family: "Roboto", "Trirong", "arial", sans-serif;
+}
+
+.container-fluid {
+    margin-top: 55px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.vertical-nav {
+    position: fixed;
+}
+
+.toggle-menu i:before {
+    content: "\eb56";
+}
+
+.toggle-menu {
+    color: #FFEB3B;
+    box-shadow: none;
+    border-radius: 0;
+    border: 1px solid #FFEB3B;
+    right: 0;
+    left: 10px;
+}
+
+#scrollUp {
+    color: #FFEB3B;
+}
+
+.circless {
+    background: #FFEB3B;
+}
+
+.smart-plug-logo {
+    margin: 0;
+    margin-top: 6px;
+    margin-left: 28px;
+    float: left;
+    position: relative;
+    line-height: 50px;
+    color: white;
+}
+
+.dashboard-wrapper {
+    min-height: 0;
+}
+
+.text-white {
+    color: white;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.btn-red {
+    background-color: #E91E63;
+    border-color: #E91E63;
+    color: #ffffff;
+}
+
+.btn-red:hover {
+    color: #FFEB3B;
+}
+
+.out {
+    color: #3ce9ff;
+}
+
+.smart-plug-card-yellow {
+    border: 1px solid #FFEB3B;
+    box-shadow: 0 13px 17px 3px rgba(0, 0, 0, 0.16);
+}
+
+.internet-connection {
+    position: fixed;
+    top: -78px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px;
+    width: 100px;
+    background: #1f1f1f;
+    border: 1px solid #9a1414;
+    border-top: 0;
+    box-shadow: 0 13px 17px 3px rgba(0, 0, 0, 0.16);
+    transition: .5s;
+    z-index: 800;
+}
+
+.internet-connection div {
+    text-align: center;
+    color: #ffffff;
+}
+
+.internet-connection-change {
+    top: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

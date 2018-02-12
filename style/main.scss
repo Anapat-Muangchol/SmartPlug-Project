@@ -1,0 +1,124 @@
+@import "variable";
+
+body {
+  color: #FFEB3B;
+  font-family: $Roboto;
+}
+
+.container-fluid {
+  margin-top: 55px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+header {
+
+}
+
+header {
+  //background: -moz-linear-gradient(50deg, #0e0e0e 0%, #E91E63 100%); /* ff3.6+ */
+  //background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #0e0e0e), color-stop(100%, #E91E63)); /* safari4+,chrome */
+  //background: -webkit-linear-gradient(50deg, #0e0e0e 0%, #E91E63 100%); /* safari5.1+,chrome10+ */
+  //background: -o-linear-gradient(50deg, #0e0e0e 0%, #E91E63 100%); /* opera 11.10+ */
+  //background: -ms-linear-gradient(50deg, #0e0e0e 0%, #E91E63 100%); /* ie10+ */
+  //background: linear-gradient(40deg, #0e0e0e 0%, #E91E63 100%); /* w3c */
+  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E91E63', endColorstr='#0e0e0e',GradientType=0 ); /* ie6-9 */
+}
+
+.vertical-nav {
+  position: fixed;
+}
+
+.toggle-menu i:before {
+  content: "\eb56";
+}
+
+.toggle-menu {
+  color: #FFEB3B;
+  box-shadow: none;
+  border-radius: 0;
+  border: 1px solid #FFEB3B;
+  right: 0;
+  left: 10px;
+}
+
+#scrollUp {
+  color: #FFEB3B;
+}
+
+.circless {
+  background: $smart-plug-yellow;
+}
+
+.smart-plug-logo {
+  margin: 0;
+  margin-top: 6px;
+  margin-left: 28px;
+  float: left;
+  position: relative;
+  line-height: 50px;
+  color: white;
+}
+
+.dashboard-wrapper {
+  min-height: 0;
+}
+
+.text-white {
+  color: white;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.right-text {
+  text-align: right;
+}
+
+.btn-red {
+  background-color: $smart-plug-red;
+  border-color: $smart-plug-red;
+  color: #ffffff;
+}
+
+.btn-red:hover {
+  color: $smart-plug-yellow;
+}
+
+.out {
+  color: #3ce9ff;
+}
+
+.smart-plug-card-yellow {
+  border: 1px solid $smart-plug-yellow;
+  box-shadow: 0 13px 17px 3px rgba(0, 0, 0, 0.16);
+}
+
+.internet-connection {
+  position: fixed;
+  top: -78px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 10px;
+  width: 100px;
+  background: #1f1f1f;
+  border: 1px solid #9a1414;
+  border-top: 0;
+  box-shadow: 0 13px 17px 3px rgba(0, 0, 0, 0.16);
+  transition: .5s;
+  z-index: 800;
+  div {
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+.internet-connection-change {
+  top: 0;
+}

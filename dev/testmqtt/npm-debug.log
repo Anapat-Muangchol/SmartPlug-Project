@@ -1,0 +1,52 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'mqtt', '--save' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData mqtt
+8 silly fetchNamedPackageData mqtt
+9 silly mapToRegistry name mqtt
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/mqtt
+13 verbose request uri https://registry.npmjs.org/mqtt
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 3:08:21 PM
+16 verbose request id dee359449a061013
+17 http request GET https://registry.npmjs.org/mqtt
+18 info retry will retry, error on last attempt: Error: self signed certificate
+19 info attempt registry request try #2 at 3:08:32 PM
+20 http request GET https://registry.npmjs.org/mqtt
+21 info retry will retry, error on last attempt: Error: self signed certificate
+22 info attempt registry request try #3 at 3:09:32 PM
+23 http request GET https://registry.npmjs.org/mqtt
+24 silly fetchPackageMetaData Error: self signed certificate
+24 silly fetchPackageMetaData     at Error (native)
+24 silly fetchPackageMetaData     at TLSSocket.<anonymous> (_tls_wrap.js:1016:38)
+24 silly fetchPackageMetaData     at emitNone (events.js:67:13)
+24 silly fetchPackageMetaData     at TLSSocket.emit (events.js:166:7)
+24 silly fetchPackageMetaData     at TLSSocket._finishInit (_tls_wrap.js:585:8)
+24 silly fetchPackageMetaData  error for mqtt { [Error: self signed certificate] code: 'DEPTH_ZERO_SELF_SIGNED_CERT' }
+25 silly rollbackFailedOptional Starting
+26 silly rollbackFailedOptional Finishing
+27 silly runTopLevelLifecycles Starting
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: self signed certificate
+30 verbose stack     at Error (native)
+30 verbose stack     at TLSSocket.<anonymous> (_tls_wrap.js:1016:38)
+30 verbose stack     at emitNone (events.js:67:13)
+30 verbose stack     at TLSSocket.emit (events.js:166:7)
+30 verbose stack     at TLSSocket._finishInit (_tls_wrap.js:585:8)
+31 verbose cwd /var/www/smartplug/web/dev/testmqtt
+32 error Linux 4.4.35-2-pve
+33 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "mqtt" "--save"
+34 error node v4.2.6
+35 error npm  v3.5.2
+36 error code DEPTH_ZERO_SELF_SIGNED_CERT
+37 error self signed certificate
+38 error If you need help, you may report this error at:
+38 error     <https://github.com/npm/npm/issues>
+39 verbose exit [ 1, true ]

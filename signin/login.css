@@ -1,0 +1,285 @@
+body, html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: normal 15px 'Roboto', arial, sans-serif;
+    line-height: 18px;
+    color: #fff;
+    height: 100%;
+    background-color: #3c3c3c;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: " ";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+h5 {
+    margin: 3px 25px;
+    padding: 0;
+    text-shadow: none;
+    color: #353C48;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#box {
+    width: 320px;
+    margin: 90px auto 50px auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -160px;
+    padding-bottom: 10px;
+}
+
+#top_header {
+    width: 100%;
+    margin: 0;
+    padding-top: 35px;
+    text-align: center;
+}
+
+#top_header img.logo {
+    max-width: 140px;
+    text-align: center;
+    margin: 10px auto 30px auto;
+}
+
+#top_header > h5 {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 500;
+    padding: 20px 0;
+    color: #FFEB3B;
+}
+
+.form-block {
+    position: relative;
+}
+
+.form-block i {
+    position: absolute;
+    right: 40px;
+    top: 17px;
+    color: #666;
+    font-size: 16px;
+}
+
+#inputs {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 270px;
+    height: 48px;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    border: thin solid #ddd;
+    color: #4f4f4f;
+    font-size: 13px;
+    border-radius: 0;
+}
+
+input[type=text]:hover, input[type=password]:hover, input[type=email]:hover {
+    border: thin solid #47759e;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+    border: thin solid #ddd;
+    border-left: thin solid #eb4343;
+    outline: none;
+}
+
+input[type=submit] {
+    color: #fff;
+    font-size: 18px;
+    background-color: #E91E63;
+    border: 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    transition: all .2s ease;
+    cursor: pointer;
+    width: 270px;
+    height: 48px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+input[type=submit]:hover {
+    background-color: #f90055;
+    color: #fff;
+}
+
+input[type=submit]:focus {
+    outline: none;
+    border: 0;
+}
+
+#bottom {
+    width: 270px;
+    margin: 0 auto;
+    padding: 10px 0;
+    height: 28px;
+}
+
+.pull-right {
+    float: right;
+    line-height: 18px;
+}
+
+.cb-label {
+    font-size: 15px;
+    color: #FFEB3B;
+    line-height: 100%;
+    margin-right: 5px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 56px;
+    height: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.switch-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.switch-label {
+    position: relative;
+    display: block;
+    height: inherit;
+    font-size: 10px;
+    text-transform: uppercase;
+    background: #E91E63;
+    border-radius: inherit;
+    -webkit-transition: 0.15s ease-out;
+    -moz-transition: 0.15s ease-out;
+    -o-transition: 0.15s ease-out;
+    transition: 0.15s ease-out;
+    -webkit-transition-property: opacity background;
+    -moz-transition-property: opacity background;
+    -o-transition-property: opacity background;
+    transition-property: opacity background;
+}
+
+.switch-label:before, .switch-label:after {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5em;
+    line-height: 1;
+    -webkit-transition: inherit;
+    -moz-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
+}
+
+.switch-label:before {
+    content: attr(data-off);
+    right: 11px;
+    color: #ffffff;
+}
+
+.switch-label:after {
+    content: attr(data-on);
+    left: 11px;
+    color: white;
+    opacity: 0;
+}
+
+.switch-input:checked ~ .switch-label {
+    background: #4CAF50;
+}
+
+.switch-input:checked ~ .switch-label:before {
+    opacity: 0;
+}
+
+.switch-input:checked ~ .switch-label:after {
+    opacity: 1;
+}
+
+.switch-handle {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 10px;
+    -webkit-transition: left 0.15s ease-out;
+    -moz-transition: left 0.15s ease-out;
+    -o-transition: left 0.15s ease-out;
+    transition: left 0.15s ease-out;
+}
+
+.switch-handle:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -5px 0 0 -5px;
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+}
+
+.switch-input:checked ~ .switch-handle {
+    left: 39px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.or {
+    color: #353C48;
+}
+
+#password-signin {
+    width: 68%;
+    margin-left: 25px;
+    display: inline;
+}
+
+#show-password-btn {
+    height: 49px;
+    width: 49px;
+}
+
+/*# sourceMappingURL=login.css.map */

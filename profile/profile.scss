@@ -1,0 +1,115 @@
+@import '../style/variable';
+
+.red-border {
+  border: 1px solid $smart-plug-red;
+}
+
+.help-block {
+  color: #ffffff;
+  font-size: 1em;
+  display: none;
+}
+
+#email:invalid {
+  + span#email-err {
+    display: inline;
+  }
+}
+
+.btn-default:hover {
+  color: white;
+  background-color: $smart-plug-red;
+  border: 1px solid #556174;
+}
+
+.gradient-blue-purple-diagonal {
+  color: white;
+  background: rgb(30, 87, 153);
+  background: -moz-linear-gradient(45deg, rgba(30, 87, 153, 1) 0%, rgba(32, 124, 202, 1) 29%, rgba(170, 79, 204, 1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(30, 87, 153, 1) 0%, rgba(32, 124, 202, 1) 29%, rgba(170, 79, 204, 1) 100%);
+  background: linear-gradient(45deg, rgba(30, 87, 153, 1) 0%, rgba(32, 124, 202, 1) 29%, rgba(170, 79, 204, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#aa4fcc', GradientType=1);
+}
+
+.gradient-ffc107-ff9800-diagonal {
+  color: #77062d;
+  background: rgb(255, 193, 7);
+  background: -moz-linear-gradient(45deg, rgba(255, 193, 7, 1) 1%, rgba(255, 152, 0, 1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(255, 193, 7, 1) 1%, rgba(255, 152, 0, 1) 100%);
+  background: linear-gradient(45deg, rgba(255, 193, 7, 1) 1%, rgba(255, 152, 0, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc107', endColorstr='#ff9800', GradientType=1);
+}
+
+.no-margin {
+  margin: 0
+}
+
+.plug-title {
+  padding: 1rem;
+}
+
+.line-red {
+  height: 0.5rem;
+  background-color: $smart-plug-red;
+}
+
+.panel {
+  background: transparent;
+}
+
+//.select-title {
+//  text-align: center;
+//  span {
+//    color: white;
+//    font-size: 2em;
+//    font-weight: 100;
+//  }
+//}
+
+#first-letter-fname {
+  text-align: center;
+  margin: auto;
+  font-size: 7em;
+  border: 1px solid;
+  border-radius: 50%;
+  width: 158px;
+  background-color: #141414;
+}
+
+#profile-title {
+
+}
+
+#view-email-panel {
+  text-align: center;
+  margin-top: 25px;
+  word-wrap: break-word;
+}
+
+#view-user {
+  p {
+    font-size: 2em;
+    font-weight: 100;
+    color: white;
+  }
+
+  .panel-body {
+    border: 0;
+    border-bottom: 1px solid white;
+  }
+
+  #edit-btn {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+#editable-user-form {
+  #submit-panel {
+    padding-left: 15px;
+    padding-right: 15px;
+    #submit-btn {
+      width: 100%;
+    }
+  }
+}

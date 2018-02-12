@@ -1,0 +1,82 @@
+@import '../style/variable';
+
+/// Mixin to customize scrollbars
+/// Beware, this does not work in all browsers
+/// @author Hugo Giraudel
+/// @param {Length} $size - Horizontal scrollbar's height and vertical scrollbar's width
+/// @param {Color} $foreground-color - Scrollbar's color
+/// @param {Color} $background-color [mix($foreground-color, white, 50%)] - Scrollbar's color
+/// @example scss - Scrollbar styling
+///   @include scrollbars(.5em, slategray);
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+  // For Google Chrome
+  ::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+
+  ::-webkit-scrollbar-track {
+    //background: $background-color;
+  }
+
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    //scrollbar-track-color: $background-color;
+  }
+}
+
+@include scrollbars(.5em, $smart-plug-red);
+
+.chat-height {
+  height: 50vh;
+}
+
+.out {
+  float: right;
+}
+
+.eye-toggle-password {
+  color: $smart-plug-red;
+}
+
+/*
+overrides
+ */
+.chats li.in .message {
+  margin-left: 2vw;
+  display: inline-block;
+}
+
+.chats li.out .message {
+  margin-right: 2vw;
+}
+
+.chats li p.inffo {
+  white-space: normal;
+  word-break: break-all;
+}
+
+.form-control-feedback {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  pointer-events: none;
+}
+
+.register {
+  background: #1f1f1f;
+  border: 1px solid #404040;
+  box-shadow: 0px 3px 3px 3px #171717;
+  margin-top: 20px;
+}
